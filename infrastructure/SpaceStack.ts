@@ -18,7 +18,7 @@ export class SpaceStack extends Stack {
         super(scope, id, props)
 
         const helloLambda = new LambdaFunction(this, 'helloLambda', {
-            runtime: Runtime.NODEJS_14_X,
+            runtime: Runtime.NODEJS_18_X,
             code: Code.fromAsset(join(__dirname, '..', 'services', 'hello')),
             handler: 'hello.main'
         })
