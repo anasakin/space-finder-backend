@@ -1,4 +1,14 @@
-@endpoint=https://gtc7pt763e.execute-api.eu-central-1.amazonaws.com/prod
+@endpoint=https://tp1o25rav6.execute-api.eu-central-1.amazonaws.com/prod/
 
 GET {{endpoint}}/hello
 ###
+
+POST {{endpoint}}/spaces/
+Content-Type: application/json
+
+{
+    "location": "London",
+    "name": "Best location"
+}
+###
+
