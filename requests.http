@@ -1,7 +1,11 @@
-@endpoint=https://tp1o25rav6.execute-api.eu-central-1.amazonaws.com/prod/
+@endpoint=https://btm0ljuqu0.execute-api.eu-central-1.amazonaws.com/prod/
 
 GET {{endpoint}}/hello
 ###
+
+GET {{endpoint}}/spaces?spaceId=a283c575-85c7-4392-a6c4-dc075b059528
+###
+
 
 POST {{endpoint}}/spaces/
 Content-Type: application/json
