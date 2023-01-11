@@ -7,9 +7,7 @@
     "@aws-amplify/auth": "^3.4.32",
     "@types/aws-lambda": "^8.10.109",
     "aws-amplify": "^4.0.0",
-    "aws-sdk": "^2.900.0",
-    "uuid": "^9.0.0",
-    "uuidv4": "^6.2.13"
+    "aws-sdk": "^2.900.0"
   },
   "devDependencies": {
     "@types/node": "^15.0.1",
