@@ -102,7 +102,7 @@ export class IdentityPoolWrapper {
                 adminsMapping: {
                     type: 'Token',
                     ambiguousRoleResolution: 'AuthenticatedRole',
-                    identityProvider: `${this.userPool.userPoolProviderName}:${this.userPoolClient.userPoolClientName}`
+                    identityProvider: `${this.userPool.userPoolProviderName}:${this.userPoolClient.userPoolClientId}`
                 }
             }
         })
