@@ -2,6 +2,18 @@ import { AuthService } from "./AuthService";
 import { config } from "./config";
 import * as AWS from 'aws-sdk';
 
+AWS.config.region = config.REGION;
+
+async function getBuckets() {
+    let buckets;
+    try {
+      buckets = await new AWS.S3().listBuckets().promise();
+    } catch (error) {
+      buckets = undefined
+    }
+    return buckets;
+}
+
 async function callStuff() {
   const authService = new AuthService();
 
@@ -12,7 +24,9 @@ async function callStuff() {
 
   await authService.getAWSTemporaryCreds(user);
   const SomeCreds = AWS.config.credentials;
+  const buckets = await getBuckets();
   const a = 5;
 }
 
 callStuff();
+
